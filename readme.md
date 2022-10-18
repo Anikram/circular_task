@@ -1,6 +1,6 @@
 ## Task
 
-We are to send the list of very precious data to our personal cloud storage provided by 3rd party.
+We are to send the list of very precious data to our personal cloud storage (provided by 3rd party).
 Service provider validates every incoming object against the schema:
 
 ```
@@ -12,8 +12,7 @@ Service provider validates every incoming object against the schema:
 }
 ```
 
-Here is the project of ours which combines values we want to send and 
-stringifies everything.
+Here is the project of ours which must combine and prepare values we want to send them into the cloud.
 
 
 ### Project view
@@ -82,4 +81,4 @@ at `line 4` of `src/helpers/parser.js`.
 ![explanation](assets/explanation.png)
 
 When there are circular require() calls, a module might not have finished executing which leads to modules imports failures. The circular dependency is detected by Node.js,
-and in order to avoid an infinite loop it returns the incompletely loaded module. In practice that leads to imported module be equel to an empty object, and empty's object destructured methods equels "undefined". That's why we will face TypeError in our example.
+and in order to avoid an infinite loop it returns the incompletely loaded module. In practice that leads to imported module be equal to an empty object, and empty's object destructured methods equals "undefined". That's why we will face TypeError in our example.
